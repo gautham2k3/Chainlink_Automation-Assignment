@@ -1,13 +1,35 @@
-# Sample Hardhat Project
+# Automated Greenhouse (Chainlink Keeper Project)
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
+This project demonstrates **Chainlink Automation** (formerly Keepers). It simulates a digital plant that loses moisture over time and uses a smart contract to automatically "water" it when levels drop below a critical threshold.
 
-Try running some of the following tasks:
+* **Name:** Bommali Gautham Naidu
+* **UID:** 22BCT10003
+* **Email:** bgautham27@gmail.com
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat ignition deploy ./ignition/modules/Lock.js
-```
+---
+
+1.  **Install Dependencies**
+    ```shell
+    npm install
+    ```
+
+2.  **Start Local Blockchain** (Keep this terminal open)
+    ```shell
+    npx hardhat node --hostname 0.0.0.0
+    ```
+
+3.  **Deploy Contract** (In a new terminal)
+    ```shell
+    npx hardhat run scripts/deploy.js --network localhost
+    ```
+
+4.  **Run Tests**
+    ```shell
+    npx hardhat test
+    ```
+
+5.  **Start Frontend**
+    ```shell
+    cd client
+    npm start
+    ```
